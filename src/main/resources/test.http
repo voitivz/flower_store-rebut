@@ -1,0 +1,43 @@
+GET http://localhost:8080/api/v1/flowers
+###
+GET http://localhost:8080/api/v1/users
+###
+GET http://localhost:8080/api/v1/users/email?email=hihi@gmail.com
+### Test POST Add Flower
+POST http://localhost:8080/api/v1/flowers
+Content-Type: application/json
+
+{
+  "name": "Cactus",
+  "color": "Green",
+  "price": 19.5,
+  "available": true
+}
+
+###
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "email": "ucu@gmail.com",
+  "dob" : "1987-03-02"
+}
+###
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "email": "margo@gmail.com",
+  "dob" : "2006-09-04",
+  "status" : "recevied"
+}
+
+###
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "email": "user@gmail.com",
+  "dob" : "2022-05-09",
+  "status" : "sended"
+}
